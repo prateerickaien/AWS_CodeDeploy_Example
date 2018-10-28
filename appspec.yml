@@ -2,12 +2,12 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /var/www/html
+     destination: /usr/share/nginx/html
 permissions:
-   - object: /var/www/html
+   - object: /usr/share/nginx/html
      pattern: "**"
-     owner: apache
-     group: apache
+     owner: nginx
+     group: nginx
      mode: 755
      type:
        - file
